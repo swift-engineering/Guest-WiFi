@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swift Engineering Guest Wi-Fi</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      color: #0f172a;
+      max-width: 420px;
+      width: 100%;
+      border-radius: 24px;
+      padding: 32px;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+    }
+
+    h1 {
+      margin-bottom: 8px;
+      font-size: 28px;
+    }
+
+    .subtitle {
+      color: #64748b;
+      margin-bottom: 28px;
+    }
+
+    .info {
+      background: #f1f5f9;
+      padding: 16px;
+      border-radius: 16px;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+
+    .label {
+      font-size: 13px;
+      color: #64748b;
+      margin-bottom: 4px;
+    }
+
+    .value {
+      font-size: 20px;
+      font-weight: bold;
+      word-break: break-word;
+    }
+
+    .qr {
+      margin-top: 24px;
+    }
+
+    .qr img {
+      width: 220px;
+      height: 220px;
+    }
+
+    .note {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #64748b;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>Swift Engineering</h1>
+    <p class="subtitle">Guest Wi-Fi Access</p>
+
+    <div class="info">
+      <div class="label">Network Name</div>
+      <div class="value">Swift-Guest</div>
+    </div>
+
+    <div class="info">
+      <div class="label">Password</div>
+      <div class="value">BYOD2Swift</div>
+    </div>
+
+    <div class="qr">
+      <img
+        src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=WIFI:T:WPA;S:Swift-Guest;P:BYOD2Swift;;"
+        alt="Swift Engineering Wi-Fi QR Code"
+      />
+    </div>
+
+    <p class="note">
+      Scan the QR code with your phone camera to join the guest Wi-Fi.
+    </p>
+  </div>
+</body>
+</html>
